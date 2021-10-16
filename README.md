@@ -1,0 +1,1 @@
+In this challenge, I will be creating the game - rock, paper, scissors. Users will be able to launch and play this game from the console. Their input will be compared to a randomly generated computer choice, and a winner will be evaulated. 
