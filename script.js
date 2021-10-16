@@ -1,8 +1,10 @@
 
+// this array will allow a computer to be assigned a randomly generated choice  
 const option = ["ROCK", "PAPER", "SCISSORS"];
 
-console.log("Hello World");
+console.log("Hello World"); //this is just a test on the console to make sure it is working properly and connected 
 
+// this function will randomly choose a choice from the option array above 
 function computerPlay() {
   return option[~~(Math.random() * option.length)];
 }
@@ -12,12 +14,12 @@ let playerSelect;
 let playerSelection;
 
 
-
+// this function will play the game approximately 5 times. A winner will then be declared after the rounds are over
 function game() {
     let computerScore = 0
     let playerScore = 0
     
-  
+  // this for loop enables the game to be run exactly 5 times. I could change the values to make it run more times or less
     for (let i = 0; i<5; i++) {
         let playerSelection = prompt("Rock, Paper or Scissors?").toUpperCase();
         function computerPlay() { return option[~~(Math.random() * option.length)]; }
@@ -36,7 +38,7 @@ function game() {
         }
         
     }  
-
+// this compares the players score to the computers score. notice how it is outside of the for loop. this code only gets generated after the for loop completes itself 
     if(playerScore > computerScore){
         console.log('');
         console.log("Congratulations!  You beat the computer " + playerScore + " to " + computerScore);
@@ -45,7 +47,7 @@ function game() {
       }
 } 
 
-
+// this plays a single round of rock paper scissors and evaluates who won based on the inputs 
 
 function playRound(playerSelection, computerSelection) {
   
